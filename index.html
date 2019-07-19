@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/all.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <title>js underground 6F second challenge</title>
+</head>
+<body>
+    <div id="start" class="container bg-primary d-flex flex-row justify-content-center align-items-center mt-3 mb-4">
+        <div class="d-flex flex-row justify-content-center align-items-center mb-4">
+            <div class="txt-thrid font-size-txl text-shadow mr-2">60</div>
+            <div class="txt-secondary font-size-xl pt-2">
+                <div class="">SECONDS<div class="float-right txt-thrid font-size-md mt-1" style="width: 85px;">+−×÷<div class="line"></div><div class="line"></div></div></div>
+                <div class="">CHALLENGE</div>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        <button id="startBtn" class="btn bg-secondary txt-primary">START!</button>
+        <div class="w-100"></div>
+        <div class="txt-thrid font-size-xxs">try to answer more as you can</div>
+    </div>
+    <div id="play" class="container bg-primary d-flex flex-row justify-content-center align-items-center mt-3 mb-4">
+        <div class="d-flex flex-row justify-content-center align-items-center mb-4">
+            <div class="mr-4">
+                <div class="txt-thrid font-size-xs border p-2">60 SECONDS CHALLENGE</div>
+                <button id="temp" class="float-left bg-thrid font-size-xs txt-primary p-2">SCORE</button>
+                <div id="score" class="float-left bg-primary font-size-xs txt-secondary p-2">000</div>
+            </div>
+            <div id="setTime" class="flex-text-center font-size-xl txt-thrid">00:00</div>
+        </div>
+        <div class="w-100"></div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <div id="preNum" class="font-size-xxl txt-secondary flex-text-center p-2">11</div>
+            <div id="oper" class="font-size-xxl txt-thrid flex-text-center p-2">x</div>
+            <div id="nextNum" class="font-size-xxl txt-secondary flex-text-center p-2">12</div>
+            <div class="font-size-xxl txt-thrid flex-text-center p-3">=</div>
+            <input id="answer" type="text" class="bg-thrid txt-secondary font-size-xxl border-none" style="width: 255px;">
+        </div>
+    </div>
+    <div id="gameOver" class="container bg-primary d-flex flex-row justify-content-center align-items-center mt-3 mb-4">
+        <div class="d-flex flex-row justify-content-center align-items-center mb-4">
+            <div class="">
+                <div class="flex-text-center txt-thrid font-size-xs border p-1">60 SECONDS CHALLENGE</div>
+                <div class="font-size-lg txt-secondary mt-1">— YOUR FINAL SCORE —</div>
+                <div id="totalScore" class="flex-text-center bg-primary font-size-xxl txt-secondary p-2">0</div>
+            </div>
+        </div>
+        <div class="w-100"></div>
+        <button id="tryAgain" class="btn bg-secondary txt-primary">TRY AGAIN!</button>
+    </div>
+
+    <script src="./js/all.js"></script>
+</body>
+</html>
