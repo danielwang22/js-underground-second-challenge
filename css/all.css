@@ -13,6 +13,7 @@ body {
   line-height: 1;
   color: #000000;
   text-align: left;
+  list-style: none;
   background-color: #FF9D00;
   margin-right: auto;
   margin-left: auto;
@@ -20,7 +21,7 @@ body {
 
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin-right: auto;
   margin-left: auto;
 }
@@ -301,6 +302,10 @@ body {
   display: inline-block;
 }
 
+.d-none {
+  display: none;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,6 +345,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .align-items-center {
@@ -411,6 +422,10 @@ body {
 
 .outline-none {
   outline: none;
+}
+
+.border-none {
+  border: none;
 }
 
 .border {

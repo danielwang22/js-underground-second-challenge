@@ -61,14 +61,15 @@ body {
     line-height: 1;
     color: #000000;
     text-align: left;
+    list-style: none;
     background-color: $color-primary;
     margin-right: auto;
     margin-left: auto;
 }
 
-//container
+//component
 .container{
-    @include container(100%,100%);
+    @include container(100%,100vh);
 }
 
 //utilities
@@ -119,6 +120,9 @@ body {
 .d-block{
     display: inline-block;
 }
+.d-none{
+    display: none;
+}
 .d-flex{
     display: flex; 
 }
@@ -138,6 +142,9 @@ body {
 }
 .justify-content-between{
     justify-content: space-between;
+}
+.justify-content-end{
+    justify-content: flex-end;
 }
 .align-items-center{
     align-content: center;

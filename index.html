@@ -12,7 +12,16 @@
     <title>js underground 6F second challenge</title>
 </head>
 <body>
-    <div id="start" class="container bg-primary d-flex flex-row justify-content-center align-items-center mt-3 mb-4">
+    <div id="billboard" class="w-100 postion-absolute bg-primary d-flex flex-row justify-content-end align-items-center" style="top: 0;right: 10px;">
+        <table id="yourscore" class="w-100 d-none">
+            <tr>
+            　  <td class="font-size-xs text-center" style="width: 50%">Date</td>
+                <td class="font-size-xs text-center" style="width: 50%">Youe Score</td>
+        　  </tr>
+        </table>
+        <button id="openBillboard" class="btn p-0 bg-primary boreder-none">🐨</button>
+    </div>
+    <div id="start" class="container bg-primary d-flex flex-row justify-content-center align-items-center">
         <div class="d-flex flex-row justify-content-center align-items-center mb-4">
             <div class="txt-thrid font-size-txl text-shadow mr-2">60</div>
             <div class="txt-secondary font-size-xl pt-2">
@@ -25,11 +34,11 @@
         <div class="w-100"></div>
         <div class="txt-thrid font-size-xxs">try to answer more as you can</div>
     </div>
-    <div id="play" class="container bg-primary d-flex flex-row justify-content-center align-items-center mt-3 mb-4">
+    <div id="play" class="container bg-primary d-flex flex-row justify-content-center align-items-center">
         <div class="d-flex flex-row justify-content-center align-items-center mb-4">
             <div class="mr-4">
                 <div class="txt-thrid font-size-xs border p-2">60 SECONDS CHALLENGE</div>
-                <button id="temp" class="float-left bg-thrid font-size-xs txt-primary p-2">SCORE</button>
+                <div id="temp" class="float-left bg-thrid font-size-xs txt-primary p-2">SCORE</div>
                 <div id="score" class="float-left bg-primary font-size-xs txt-secondary p-2">000</div>
             </div>
             <div id="setTime" class="flex-text-center font-size-xl txt-thrid">00:00</div>
@@ -40,10 +49,13 @@
             <div id="oper" class="font-size-xxl txt-thrid flex-text-center p-2">x</div>
             <div id="nextNum" class="font-size-xxl txt-secondary flex-text-center p-2">12</div>
             <div class="font-size-xxl txt-thrid flex-text-center p-3">=</div>
-            <input id="answer" type="text" class="bg-thrid txt-secondary font-size-xxl border-none" style="width: 255px;">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <input id="answer" type="text" class="bg-thrid txt-secondary font-size-xxl border-none" style="width: 255px;">
+                <div class="font-size-xxs txt-thrid flex-text-center">press enter to answer</div>
+            </div>
         </div>
     </div>
-    <div id="gameOver" class="container bg-primary d-flex flex-row justify-content-center align-items-center mt-3 mb-4">
+    <div id="gameOver" class="container bg-primary d-flex flex-row justify-content-center align-items-center">
         <div class="d-flex flex-row justify-content-center align-items-center mb-4">
             <div class="">
                 <div class="flex-text-center txt-thrid font-size-xs border p-1">60 SECONDS CHALLENGE</div>
